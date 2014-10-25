@@ -2,7 +2,6 @@
     "name": "nanjingboy/classloader",
     "type": "library",
     "description": "Auto loading the missing class while the file's name starts with lowercase char",
-    "version": "0.1.0",
     "keywords": ["autoloader", "lowercase"],
     "homepage": "https://github.com/nanjingboy/classloader",
     "license": "MIT",

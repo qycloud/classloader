@@ -10,7 +10,7 @@ ClassLoader is a tool to auto loading the missing class while the file's name st
  {
     "require": {
         "php": ">=5.4.0",
-        "nanjingboy/classloader": ">=0.1.0"
+        "nanjingboy/classloader": "*"
     }
 }
 ```
