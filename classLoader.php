@@ -19,9 +19,10 @@ class ClassLoader
             $filePath = $rootPath . DIRECTORY_SEPARATOR . implode('/', $parts) . '.php';
             if (file_exists($filePath)) {
                 require $filePath;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     public function register($prepend = false)
