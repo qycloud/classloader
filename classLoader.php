@@ -16,7 +16,7 @@ class ClassLoader
         $prefix = $parts[0];
         if (array_key_exists($prefix, $this->_prefixes)) {
             $rootPath = realpath($this->_prefixes[$prefix]);
-            $filePath = $rootPath . DIRECTORY_SEPARATOR . implode('/', $parts) . '.php';
+            $filePath = $rootPath . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, $parts) . '.php';
             if (file_exists($filePath)) {
                 require $filePath;
                 return true;
